@@ -1,0 +1,51 @@
+{
+  "name": "arsuga-reactlib-dropdownsearch",
+  "version": "1.0.3",
+  "description": "Searchable Dropdown - Reactjs Component",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "build-lib": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arinsuga/searchable-dropdown-reactjs.git"
+  },
+  "keywords": [
+    "dropdown"
+  ],
+  "author": "arinsuga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arinsuga/searchable-dropdown-reactjs/issues"
+  },
+  "homepage": "https://github.com/arinsuga/searchable-dropdown-reactjs#readme",
+  "devDependencies": {
+    "@babel/preset-react": "^7.24.7",
+    "@chromatic-com/storybook": "^1.6.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@storybook/addon-essentials": "^8.2.6",
+    "@storybook/addon-interactions": "^8.2.6",
+    "@storybook/addon-links": "^8.2.6",
+    "@storybook/addon-onboarding": "^8.2.6",
+    "@storybook/blocks": "^8.2.6",
+    "@storybook/react": "^8.2.6",
+    "@storybook/react-vite": "^8.2.6",
+    "@storybook/test": "^8.2.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "^4.19.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook": "^8.2.6"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
