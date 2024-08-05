@@ -21,3 +21,14 @@ export const Searchable = {
     searchable: true,
   },
 };
+
+/**
+ * Portal Support
+ */
+export const Portal = {
+  args: {
+    placeholder: 'Type To Search',
+    searchable: true,
+    datasource: ["satu", "satu dua"],
+  },
+};

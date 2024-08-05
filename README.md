@@ -7,8 +7,9 @@ Searchable Dropdown - Reactjs Component
 
 ## Feature
 - Basic list
-- searchable
-- searchable enable/disable
+- Searchable
+- Searchable enable/disable
+- Datasource via props
 
 ## Feature TODO
 - Portal Support

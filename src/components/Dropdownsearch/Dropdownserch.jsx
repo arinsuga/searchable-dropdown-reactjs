@@ -5,13 +5,18 @@ import './Dropdownsearch.css'
 import { options } from "./options";
 import { SearchSelect } from "./SearchSelect";
   
-export const Dropdownsearch = ({ placeholder, searchable }) => {
+export const Dropdownsearch = ({ placeholder, searchable, datasource }) => {
 
   const [dropdownVisible, setDropdownVisible] = useState(false);
 
+    var optionData = options;
 
-    const filterMethod = (options, query) => {
-      return options.filter(option => option.toLowerCase().includes(query.toLowerCase()))
+    if (datasource) {
+      optionData = datasource;
+    }
+
+    const filterMethod = (optionData, query) => {
+      return optionData.filter(option => option.toLowerCase().includes(query.toLowerCase()))
     }
 
     const showDropdown = () => {
@@ -24,7 +29,7 @@ export const Dropdownsearch = ({ placeholder, searchable }) => {
 
     return (
       <SearchSelect 
-          options={options} 
+          options={optionData} 
           searchable={searchable}
           filterMethod={filterMethod} 
           render={({results, searchList}) => (
@@ -61,4 +66,3 @@ export const Dropdownsearch = ({ placeholder, searchable }) => {
       )
 
 }
-  
