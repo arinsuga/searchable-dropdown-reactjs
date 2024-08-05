@@ -8,9 +8,9 @@ Searchable Dropdown - Reactjs Component
 ## Feature
 - Basic list
 - searchable
+- searchable enable/disable
 
 ## Feature TODO
-- searchable enable/disable
 - Portal Support
 - Single or multiple selection
 - customize rendering option
